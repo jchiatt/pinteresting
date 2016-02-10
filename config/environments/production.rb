@@ -80,7 +80,7 @@ Rails.application.configure do
   # Required for Devise
   config.action_mailer.default_url_options = { host: 'jchiatt-pinteresting.herokuapp.com' }
 
-  config.paperclip.defaults = {
+  config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
       :s3_region => ENV['AWS_REGION'],
